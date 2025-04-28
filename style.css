@@ -573,5 +573,284 @@ span{
     color: rgb(21, 137, 255);
 }
 
+/* Base styles (already in your CSS) remain unchanged */
 
+/* Media Queries for Responsiveness */
+
+/* Large devices (laptops/desktops, 992px and below) */
+@media only screen and (max-width: 992px) {
+    .header {
+        padding: 30px 8%;
+    }
+    
+    .logo {
+        font-size: 28px;
+    }
+    
+    .navbar a {
+        font-size: 16px;
+        margin: 0 20px;
+    }
+    
+    .contact {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    
+    .home {
+        flex-direction: column;
+        gap: 3em;
+        padding: 120px 8% 0;
+        text-align: center;
+    }
+    
+    .home-content {
+        order: 2;
+    }
+    
+    .home-content h3 {
+        font-size: 32px;
+    }
+    
+    .home-content h1 {
+        font-size: 42px;
+    }
+    
+    .home-content p {
+        font-size: 16px;
+    }
+    
+    .btn-box {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .img-box {
+        order: 1;
+    }
+    
+    .img-box img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .about {
+        flex-direction: column;
+        gap: 3em;
+        padding: 12% 5%;
+        text-align: center;
+    }
+    
+    .about-img img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .about-content h2,
+    .about-content ul {
+        text-align: center;
+    }
+    
+    .about-content h2 {
+        font-size: 36px;
+    }
+    
+    .about-content ul li {
+        font-size: 22px;
+    }
+    
+    .skills-row {
+        gap: 3rem;
+    }
+    
+    .title {
+        margin: 0 0 1.5rem 0;
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .navbar a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+    
+    .contact {
+        font-size: 14px;
+    }
+    
+    .home {
+        padding-top: 180px;
+    }
+    
+    .home-content h3 {
+        font-size: 28px;
+    }
+    
+    .home-content h1 {
+        font-size: 36px;
+    }
+    
+    .img-box img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .btn-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .about-img img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .skills {
+        padding: 3rem 2rem;
+    }
+    
+    .skills .heading {
+        font-size: 3.5rem;
+    }
+    
+    .contact-form h2 {
+        padding: 8rem 2rem;
+        font-size: 3rem;
+    }
+    
+    .footer ul li {
+        padding: 0 10px;
+    }
+}
+
+/* Small devices (mobile phones, 576px and below) */
+@media only screen and (max-width: 576px) {
+    .header {
+        padding: 15px 3%;
+    }
+    
+    .logo {
+        font-size: 22px;
+    }
+    
+    .navbar {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    
+    .navbar a {
+        margin: 5px;
+        font-size: 12px;
+    }
+    
+    .contact {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+    
+    .home-content h3 {
+        font-size: 24px;
+    }
+    
+    .home-content h1 {
+        font-size: 28px;
+    }
+    
+    .home-content p {
+        font-size: 14px;
+    }
+    
+    .btn-1, .btn-2 {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .img-box img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about-img img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about-content h2 {
+        font-size: 28px;
+    }
+    
+    .about-content ul li {
+        font-size: 18px;
+    }
+    
+    .skills .heading {
+        font-size: 3rem;
+    }
+    
+    .skills-row {
+        flex-direction: column;
+    }
+    
+    .contact-form h2 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-form form .input-box {
+        flex-direction: column;
+    }
+    
+    .footer .social a {
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+        margin: 0 5px;
+    }
+    
+    .footer ul li {
+        padding: 5px;
+        display: block;
+    }
+}
+
+/* Extra small devices (small mobile phones, 400px and below) */
+@media only screen and (max-width: 400px) {
+    .home-content h1 {
+        font-size: 24px;
+    }
+    
+    .img-box img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .about-img img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .skills .heading,
+    .about .heading,
+    .contact-form h2 {
+        font-size: 2.5rem;
+    }
+    
+    .skills-content .progress h3 {
+        font-size: 1.3rem;
+    }
+}
 
